@@ -1,0 +1,124 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Zenith Technology LLC</title>
+<link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:600italic' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" src="{% static "scripts/nbw-parallax.js" %}"></script>
+<script type="text/javascript" src="{% static "scripts/jquery.localscroll-1.2.7-min.js" %}"></script>
+<script type="text/javascript" src="{% static "scripts/jquery.scrollTo-1.4.2-min.js" %}"></script>
+<script type="text/javascript" src="{% static "scripts/jquery.inview.js" %}"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll();
+})
+</script>
+<script type="text/javascript" language="javascript">
+   
+     $(document).ready(function() {
+
+      
+         $("#arrow-down").effect( "shake", 
+          {direction:'down',times:100}, 100000 );
+      
+
+   });
+   </script>
+<script>
+	$(document).ready(function(){
+	$(function(){
+    $('.featured-section-img img:gt(0)').hide();
+    setInterval(function(){
+      $('.featured-section-img :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.featured-section-img');}, 
+      1000);
+});
+ });
+</script>
+</head>
+
+<body>
+
+<ul id="nav">
+	<li><a href="#intro" title="Next Section"><img src="{% static "images/dot.png" %}" alt="Link" /></a></li>
+    <li><a href="#second" title="Next Section"><img src="{% static "images/dot.png" %}" alt="Link" /></a></li>
+    <li><a href="#third" title="Next Section"><img src="{% static "images/dot.png" %}" alt="Link" /></a></li>
+    <li><a href="#fourth" title="Next Section"><img src="{% static "images/dot.png" %}" alt="Link" /></a></li>
+    <li><a href="#fifth" title="Next Section"><img src="{% static "images/dot.png" %}" alt="Link" /></a></li>
+</ul>
+
+<div id="header">
+	<div class="story">        
+        <img src="{% static "images/zenith.png" %}" style="width:90px;height:35px"></img>
+    </div> <!--.story-->
+</div> <!--#header-->
+
+<div id="intro">
+	<div class="story">
+    	<div class="float-left">
+		<h2 id="zen">Zenith Technology</h2>
+        <p>Welcome to our website. We are a very specialized firm that focus on combining cutting-edge web technologies with business. </p>
+		<p>Please scroll down to begin your journey here. </p>
+		<img id="arrow-down" src="{% static "images/arrow-down.png" %}"></img>
+        </div>
+    </div> <!--.story-->
+</div> <!--#intro-->
+
+<div id="second">
+ <div class="story">
+  <div class='bg'>
+   <div class="featured-section-img">
+          <img width="256" height="256" src="{% static "images/globe_1.png" %}" />
+	  <img width="256" height="256" src="{% static "images/globe_2.png" %}" />
+	  <img width="256" height="256" src="{% static "images/globe_3.png" %}" />
+	  <img width="256" height="256" src="{% static "images/globe_4.png" %}" />	  
+   </div>
+  </div>
+    	<div class="float-right">
+            <h2>Is your business Globalization ready?</h2>
+            <p>The multiple backgrounds applied to this section are moved in a similar way to the first section -- every time the user scrolls down the page by a pixel, the positions of the backgrounds are changed.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
+        </div>
+    </div> <!--.story-->
+    
+</div> <!--#second-->
+
+<div id="third">
+	<div class="story">
+    	<div class="float-left">
+        	<h2>Is your business available on all platforms?</h2>
+            <p>The user gets a slap! Actually, all that jQuery does is moves the backgrounds relative to the position of the scrollbar. Without it, the backgrounds simply stay put and the user would never know they are missing out on the awesome! CSS2 does a good enough job to still make the effect look cool.</p>
+        </div>
+    </div> <!--.story-->
+</div> <!--#third-->
+
+<div id="fourth">
+	<div class="story">
+    	<div class="float-left">
+            <h2>Is your business targeting all kinds of people?</h2>
+            <p><em>This section only works in modern browsers that support multiple backgrounds.</em></p>
+            <p>The Nikebetterworld.com demo uses only CSS2 to create it's parallax effect. It uses empty containers in each section to give the impression of multiple backgrounds, which is the method I used for the image of the trainers. It's actually possible to achieve the same effect using CSS3s multiple backgrounds -- as I've done with the bubbles in this section, although, it will only work in modern browsers that support CSS3 multiple backgrounds.</p>
+            <p>The use of CSS3 means less markup and jQuery, making the script slightly quicker.</p>
+        </div>
+    </div> <!--.story-->
+</div> <!--#fourth-->
+
+<div id="fifth">
+	<div class="story">
+		<h2>Is the current technology used in your business ready for scaling along with the business??</h2>
+            <p>You might like to check out my other demos too:</p>          
+            
+        
+        
+        
+    </div> <!--.story-->
+</div> <!--#fifth-->
+
+</body>
+</html>
