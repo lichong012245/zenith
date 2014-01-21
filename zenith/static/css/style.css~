@@ -100,14 +100,13 @@ h2{
 width:256px;
 height: 256px;
 }
-#second .featured-section-img img { 
-    box-shadow: 0 0 10px #AAAAAA;
+#second .featured-section-img img {     
     margin: 15px 0 0 5px;
-    position: relative;
+    position: absolute;
 }
 
 #second .bg{
-	background: url(../images/trainers.png) 50% 0 no-repeat fixed;       
+	background: url(../images/bizman.jpg) 50% 0 no-repeat fixed;       
 	height: 1000px;
 	margin: 0 auto;
 	padding: 0;
